@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Toggle no_cache=true cookie",
+  "version": "1.0",
+  "description": "Toggle a 'no_cache=true' cookie, expires after 1 hour",
+  "permissions": [
+    "activeTab",
+    "cookies"
+  ],
+  "optional_host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_icon": {
+      "48": "images/icon.png"
+    },
+    "default_title": "Toggle no_cache=true cookie"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
